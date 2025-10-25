@@ -24,8 +24,11 @@ services:
       retries: 12
 
   wordpress:
-    image: wordpress:apache
-    depends_on: [db]
+    # PHP 8 では get_magic_quotes_gpc が廃止され古いWPが落ちるため、互換性のあるPHP7.4系を使用
+    image: wordpress:php7.4-apache
+    depends_on:
+      db:
+        condition: service_healthy
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wp
