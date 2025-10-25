@@ -1,0 +1,9 @@
+{
+  "php.validate.executablePath": "php",
+  "php.suggest.basic": true,
+  "phpcs.enable": true,
+  "phpcs.standard": "PSR12",
+  "phpcs.executablePath": "vendor/bin/phpcs",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "ikappas.phpcs"
+}
