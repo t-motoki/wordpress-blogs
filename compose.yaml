@@ -2,6 +2,8 @@ name: wp-stack
 services:
   db:
     image: mysql:8.0.23
+    ports:
+      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: rootpwd
       MYSQL_DATABASE: wp
@@ -41,8 +43,10 @@ services:
     depends_on: [wordpress]
     ports:
       - '80:80'
+      - '443:443'
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     networks: [front, back]
 
 volumes:
