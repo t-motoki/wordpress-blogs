@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf8">
+		<title>はじめてのHTML</title>
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+	<body>
+	
+	<!--
+		input
+			checkbox:複数選ばせる
+			radio:どれか1つ選ばせる
+			
+			属性
+				checked:最初からチェックをつける
+		label
+			ラベルを操作できるようにする。2通りある。
+			1.部品とラベルをlabelタグで囲う
+			2.idを指定して、ラベルを囲う
+	-->
+		<article>
+			<h1>アンケート</h1>
+			<form action="survey.php" method="post">
+				<p>
+					メールアドレス: 
+					<input type="text" name="email"
+					 placeholder="please enter emale">
+				</p>
+				<p>
+					Phone：
+					<label>
+					<input type="checkbox" name="phone" value="android" checked> Android
+					</label>
+					
+					<input type="checkbox" name="phone" value="iphone" id="iphone">
+					<label for="iphone"> iPhone</label>
+				</p>
+				<p>
+					Color：
+					<input type="radio" name="color" value="red" checked> Red
+					<input type="radio" name="color" value="blue"> Blue
+				</p>
+				<p><input type="submit" value="送信！"></p>
+			</form>
+		</article>
+	</body>
+</html>

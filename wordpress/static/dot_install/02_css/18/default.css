@@ -1,0 +1,28 @@
+/*
+display
+- block ブロックボックスにする
+- inline インラインボックスにする
+- list-item 左にマーカーを持たせる
+- inline-block 高さと幅を設定できるようなる
+- none 表示しない
+*/
+
+h1, p, span, a {
+  border: 1px solid #ddd;
+}
+
+h1, p {
+  width: 120px;
+  /* display: inline; */
+  display: inline-block;
+}
+
+a {
+  display: none;
+}
+
+span {
+  margin-left: 10px;
+  display: list-item;
+  list-style-type: square;
+}

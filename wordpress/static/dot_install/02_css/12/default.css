@@ -1,0 +1,24 @@
+/*
+ padding-top:10px
+ padding-right:10px
+ padding-left:10px
+ padding-bottom:10px
+
+padding:
+  all
+  top/bottom right/left
+  top right/left bottom
+  top right left bottom
+
+  ※上から与える要素が
+    1個、2個、3個、4個の場合。
+*/
+
+body {
+  margin: 0;
+}
+div {
+  background: silver;
+  /* padding: 10px 50px; */
+  padding: 10px 20px 30px 40px;
+}

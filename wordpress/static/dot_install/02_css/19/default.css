@@ -1,0 +1,21 @@
+/*
+ display: table
+*/
+
+.container {
+    display: table;
+    width: 300px;
+}
+
+.box {
+    display: table-cell;
+    width: 100px;
+}
+
+.row {
+    display: table-row;
+}
+
+.gray {background: gray;}
+.silver {background: silver;}
+.orange {background: orange;}

@@ -1,0 +1,24 @@
+/*
+  cursor
+  よくつかうもの
+*/
+
+/* ハテナマークになる */
+.help {
+  cursor: help;
+}
+
+/* 動かせることがわかるもの */
+.dragme{
+  cursor: move;
+}
+
+/* 指さしアイコン */
+.clickme{
+  cursor: pointer;
+}
+
+/* 任意の画像を指定 */
+.smile{
+  cursor: url(ike.png), auto;
+}

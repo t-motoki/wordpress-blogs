@@ -1,0 +1,22 @@
+/*
+ セレクタ
+ 疑似クラス
+*/
+
+/* ulタグの子liの1つ目 */
+/* css3では2つ目、最後といった指定もできる */
+ul li:first-child { color:skyblue; }
+
+
+/* 
+ aタグにはこの順番で指定しないと、
+ 正しく反映されない可能性もある。
+*/
+
+a:link { color: violet; }		/* 未訪問 */
+a:visited { color: orange; }	/* 訪問済 */
+a:hover { color: pink; }		/* マウスを上に乗せる */
+a:active { color: red; }		/* クリック */
+
+/* カーソルがinputタグにある場合 */
+input:focus { background: skyblue;}

@@ -1,0 +1,13 @@
+{
+  "name": "wordpress-blogs/project",
+  "description": "WordPress blogs project",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Your Name"
+    }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0"
+  }
+}

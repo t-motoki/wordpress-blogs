@@ -1,0 +1,19 @@
+/*
+ セレクタ
+ 疑似要素
+*/
+
+/* p要素の最初の1行を色変える */
+/*p:first-line{color: skyblue;}*/
+
+/* p要素の最初の1文字色変える */
+/* p::first-letter{color: skyblue;} */
+
+/* 指定の要素の前と後ろに文字を追加 */
+p::before{
+  content:"-->";
+}
+
+p::after{
+  content: "<--"
+}

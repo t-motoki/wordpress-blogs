@@ -1,0 +1,20 @@
+/*
+ プロパティの値の指定方法
+*/
+
+/* 長さ */
+body{ font-size: 16px;}
+h1 { font-size: 2em;} /* 32px */
+h2 { font-size: 150%;} /* 24px */
+
+/* ぜんぶ青 */
+h1 { color: blue;}
+h1 { color: #00f;}
+h1 { color: #0000ff;}
+h1 { color: rgb(0, 0, 255);}
+h1 { color: rgb(0%, 0%, 100%);}
+
+/* rgbaもできるらしい。h3を透けさせてみる */
+/* 透明度は小数で指定しないといけないらしい */
+h3 { color: rgba(0, 0, 0, 0.5);}
+h4 { color: rgba(100%, 0%, 0%, 0.25);}

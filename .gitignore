@@ -1,0 +1,79 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / エディタ ---
+# .vscode/
+.idea/
+*.sublime-*
+*.swp
+
+# --- Node / フロントエンド ---
+node_modules/
+npm-debug.log*
+yarn-error.log
+dist/
+build/
+
+# --- Composer / PHP ---
+vendor/
+composer.phar
+phpunit.xml.cache
+
+# --- WordPress 固有 ---
+# 開発環境固有の設定ファイル
+wp-config.php
+.env
+.env.*
+wp-content/*.php
+wp-content/plugins/*/config.php
+wp-content/themes/*/config.php
+wp-content/plugins/*/.env
+wp-content/themes/*/.env
+wp-content/plugins/*/.env.*
+wp-content/themes/*/.env.*
+
+# アップロードやキャッシュなどの生成物
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/wflogs/
+wp-content/backups/
+
+# テーマ／プラグインで生成されるビルド成果物
+wp-content/themes/*/node_modules/
+wp-content/themes/*/dist/
+wp-content/plugins/*/node_modules/
+wp-content/plugins/*/dist/
+
+# デバッグ / ログ
+debug.log
+*.log
+
+# セキュリティ / 鍵
+*.pem
+*.key
+*.crt
+*.p12
+*.csr
+*.jks
+*.keystore
+*.gpg
+*.asc
+*.id_rsa
+*.id_rsa.pub
+*.id_dsa
+*.id_dsa.pub
+*.id_ed25519
+*.id_ed25519.pub
+*.id_ecdsa
+*.id_ecdsa.pub
+
+# その他一般的な不要ファイル
+*.bak
+*.tmp
+*.orig
+
+# 注意:
+# - リポジトリに WordPress 本体（core）を含めたい場合は wp-admin/ と wp-includes/ を無視しないでください。
+# - テーマやプラグインのみ管理している場合は core を除外する（wp-admin/, wp-includes/ を無視）ことを検討してください。

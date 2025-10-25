@@ -1,0 +1,12 @@
+/*
+ 属性セレクタ
+*/
+
+	/* 特定の属性があるもの */
+	a[target] { color:skyblue; }
+
+	/* 特定の属性が特定の値 */
+	a[href="http://google.com"] { color:Crimson; }
+
+	/* 特定の属性が特定の値が含まれる */
+	a[class~="search"] { color:orange; }

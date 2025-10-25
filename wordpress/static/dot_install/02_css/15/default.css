@@ -1,0 +1,24 @@
+/*
+  list
+    - list-style-type
+      マーカーのスタイルを変える
+      ex) disc(●)/circle(〇)/
+      　　square(■)/decimal(連番)
+      　　lower-alpha(abc..)
+    - list-style-image
+      画像のURLを指定すると、マーカーに画像をセットできる
+    - list-style-position
+      ex) inside/outside
+      　デフォルトはoutside。
+      　insideにするとマーカーをリストの中に入れられる。
+
+    - list-style
+    　　一気に指定できる。
+*/
+
+ul {
+  /* list-style: inside decimal; */
+  /* list-style: outside lower-alpha; */
+  /* list-style: outside square; */
+  list-style: url("ike.png") circle;
+}

@@ -1,0 +1,24 @@
+# Ignore vendor and dependencies
+node_modules/
+vendor/
+backup/
+
+# Ignore WordPress core and heavy/generated areas
+wordpress/wp-admin/
+wordpress/wp-includes/
+wordpress/wp-content/cache/
+wordpress/wp-content/wflogs/
+wordpress/wp-content/uploads/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/themes/
+wordpress/wp-content/plugins/
+
+# Ignore built/static assets
+wordpress/portfolio/
+wordpress/static/
+
+# Nginx config not to be prettified automatically
+nginx/
+
+# Git
+.git/
