@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:8.0.23
     ports:
-      - "3306:3306" 
+      - '3306:3306'
     environment:
       MYSQL_ROOT_PASSWORD: rootpwd
       MYSQL_DATABASE: wp
@@ -18,7 +18,7 @@ services:
       - db_data:/var/lib/mysql
     networks: [back]
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-u", "root", "-prootpwd"]
+      test: ['CMD', 'mysqladmin', 'ping', '-u', 'root', '-prootpwd']
       interval: 10s
       timeout: 5s
       retries: 12
@@ -39,7 +39,7 @@ services:
     image: nginx:latest
     depends_on: [wordpress]
     ports:
-      - "80:80"
+      - '80:80'
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
     networks: [front, back]
