@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf8">
+		<title>はじめてのHTML</title>
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+	<body>
+	
+	<!--
+		input
+			email
+			number
+			date
+		
+		required
+		novalidate
+	-->
+		<article>
+			<h1>アンケート</h1>
+			<!--form action="survey.php" method="post" novalidate-->
+			<form action="survey.php" method="post">
+				<p>
+					メールアドレス: 
+					<input type="email" name="email"
+					 placeholder="please enter emale" required>
+				</p>
+				<p>
+					料金: 
+					<input type="number" name="price">
+				</p>
+				<p>
+					誕生日: 
+					<input type="date" name="birthday">
+				</p>
+				<p><input type="submit" value="送信！"></p>
+			</form>
+		</article>
+	</body>
+</html>

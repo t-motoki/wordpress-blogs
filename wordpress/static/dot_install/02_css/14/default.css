@@ -1,0 +1,25 @@
+/*
+  text
+    - color : 文字色
+      ex) orange
+    - font-size : 大きさ
+      ex) 14px
+    - font-family : 種類
+      ex) Arial(アリアル), Helvetica(ヘルベチカ)
+    - font-weight : 太字にする場合
+      ex)　bold(太字)/normal(普通)
+    - text-align : 位置
+      ex) right(右寄り)/center(真ん中)/left(左寄り)
+    - text-decoration : 装飾
+      ex) underline(下線)/line-through(打消し線)/none(なし)
+*/
+
+p {
+  color: silver;
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline line-through;
+
+}

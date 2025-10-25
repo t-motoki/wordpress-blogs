@@ -1,0 +1,13 @@
+{
+  "name": "wordpress-blogs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "docker:up": "docker compose up -d --scale wordpress=2",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

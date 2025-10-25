@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf8">
+		<title>はじめてのHTML</title>
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+	<body>
+	
+	<!--
+		textaera:複数行。閉タグあり。
+			cals:幅
+			rows:高さ
+		button:ボタンの表示文字を装飾できる。閉タグあり。
+			type="submit" : 情報を送る
+			type="button" : なんらかの処理をする
+		
+		全般
+			disabled : 無効にする
+	-->
+		<article>
+			<h1>アンケート</h1>
+			<form action="survey.php" method="post">
+				<p>
+					メールアドレス: 
+					<input type="text" name="email"
+					 placeholder="please enter emale" disabled>
+				</p>
+				<p>
+					コメント: 
+					<textarea name="comment" cols="40" rows="5">コメント
+					</textarea>
+				</p>
+				<input type="hidden" name="user_id" value="23423">
+				<p>
+					<button type="submit" value="">
+						<strong>送信！</strong>
+					</button>
+				</p>
+				<p>
+					<button type="button" value="">
+						処理をする
+					</button>
+				</p>
+				<p><input type="submit" value="送信！" disabled></p>
+			</form>
+		</article>
+	</body>
+</html>

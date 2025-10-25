@@ -1,0 +1,26 @@
+/*
+ セレクタの指定の仕方
+*/
+
+/*
+	①h1とpに指定
+	---
+	h1, p { color:skyblue; }
+*/
+/*
+	②divの下のspanすべてに指定
+	---
+	div span { color:skyblue; }
+*/
+/*
+	③divの直下にあるspanに指定
+	---
+	div > span { color:skyblue; }
+*/
+/*
+	④pの次にあるp(同じ階層で並んだ場合)
+	---
+	p + p { color:skyblue; }
+*/
+/*	⑤p要素にpaintsクラスがあるもの*/
+	p.points { color:skyblue; }

@@ -1,0 +1,16 @@
+/*
+  background
+*/
+
+body{
+  background-color: silver;
+  background-image: url("ike.png");
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+  /* background-position: 10px 10px; */
+  /* background-position: top center; */
+
+  /* background-attachment: scroll; */
+  background-attachment: fixed;
+
+}

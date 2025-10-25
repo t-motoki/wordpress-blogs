@@ -1,0 +1,32 @@
+/*
+ boder
+  boder-color:枠の色
+  boder-width:枠の幅(太さのイメージ)
+  boder-style:種類
+    solid:実線
+    botted:点線
+    dashed:破線
+    double:二重線
+    inset:立体的に見せる
+    outset:同上(あんまり違いが分からん)
+ */
+
+div {
+  /* 個別指定した場合 */
+  /* border-color: orange;
+  border-width: 4px;
+  border-style: double; */
+
+  /* まとめた場合 */
+  /* border: orange 4px dotted; */
+
+  /* それぞれの枠に設定する */
+  border-top: orange 1px solid;
+  border-bottom: pink 2px dotted;
+  border-right: blue 8px inset;
+  border-left: violet 8px outset;
+
+  /* ちょっとわかりにくいので枠の幅を半分に */
+  width: 50%;
+
+}

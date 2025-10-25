@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf8">
+		<title>はじめてのHTML</title>
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+	<body>
+	
+	<!--
+	 input
+	 	text:テキストボックス
+	 	submit:ボタン
+	 	password:入力値が他の人に見えない
+	 	hidden::部品を表示せずに何等かの値を送りたいとき
+	 
+	 textの属性
+	 	name : データを送信するときの名前
+	 	size : 長さ(幅)など
+	 	maxlength : 最大入力サイズ
+	 	value: 初期値
+	 	placeholder : 入力値がないときにサンプル表示
+	-->
+		<article>
+			<h1>アンケート</h1>
+			<form action="survey.php" method="post">
+				<!-- p>
+					メールアドレス: 
+					<input type="text" name="email"
+					 size="50" maxlength="5" value="abc">
+				</p-->
+				<p>
+					メールアドレス: 
+					<input type="text" name="email"
+					 size="50" placeholder="please enter emale">
+				</p>
+				<p>
+					ログイン: 
+					<input type="password" name="password">
+				</p>
+				<input type="hidden" name="user_id" value="23423">
+				<p><input type="submit" value="送信！"></p>
+			</form>
+		</article>
+	</body>
+</html>

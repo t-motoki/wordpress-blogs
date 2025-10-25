@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf8">
+		<title>はじめてのHTML</title>
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+	<body>
+	
+	<!--
+	 table: 表を作る為のタグ
+	 thead: 表の見出しの意味
+	 tbody: 表の本体の意味
+	 tr: table row(行)
+	 th: table header(見出し)
+	 td: table data(実データ)
+	 ---
+	 colspan: 列数を指定して結合する
+	 rowspan: 行を指定して結合する
+	-->
+	
+		<header>
+			<h1>おいしいごはん！</h1>
+			<p><img src="food.jpg" alt="にく" width="245" height="184" ></p>
+			<table>
+				<thead>
+					<tr>
+						<th>boy/girl</th><th>Size</th><th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th rowspan="3">boy</th>
+						<td>S</td><td>150</td>
+					</tr>
+					<tr>
+						<!-- 上のセルと結合して消えるセル1 -->
+						<td>M</td><td>200</td>
+					</tr>
+					<tr>
+						<!-- 上のセルと結合して消えるセル2 -->
+						<td>L</td><td>250</td>
+					</tr>
+					<tr>
+						<th rowspan="3">girl</th>
+						<td>S</td><td>250</td>
+					</tr>
+					<tr>
+						<!-- 上のセルと結合して消えるセル1 -->
+						<td>M</td><td>300</td>
+					</tr>
+					<tr>
+						<!-- 上のセルと結合して消えるセル2 -->
+						<td>L</td><td>350</td>
+					</tr>
+					<tr>
+						<td colspan="2">free for kids</td>
+					</tr>
+				</tbody>
+			</table>
+			<nav>
+			- ホーム
+			- このサイトについて
+			- プロフィール
+			</nav>
+		</header>
+		
+		<section>
+			<h1>今日のおいしいごはん</h1>
+			<article>
+				<h1>おいしいごはん #12</h1>
+				<p>至高のTKG</p>
+				<h2>材料</h2>
+				<ul>
+					<li>卵</li>
+					<li>しょうゆ</li>
+					<li>ごはん</li>
+				</ul>
+				<h2>手順</h2>
+				<ol>
+					<li>まぜる</li>
+					<li>かける</li>
+				</ol>
+				<h2>定義</h2>
+				<dl>
+					<dt>TKG</dt>
+					<dd>TAMAGO KAKE GOHAN</dd>
+				</dl>
+			</article>
+		</section>
+		
+		<section>
+			<h1>新着のおいしいごはん</h1>
+			<article>
+				<h1>おいしいごはん #32</h1>
+				はもしゃぶ
+			</article>
+			<article>
+				<h1>おいしいごはん #31</h1>
+				スリランカカレー
+			</article>
+		</section>
+		
+		<aside>
+			<h1>おすすめレシピ本</h1>
+			- BOOK 1
+			- BOOK 2
+			- BOOK 3
+		</aside>
+		
+		<footer>
+			このサイトは @motoki によって運営されています。
+		</footer>
+		
+	</body>
+</html>
