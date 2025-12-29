@@ -38,6 +38,34 @@ services:
       - ./wordpress:/var/www/html
     networks: [back]
 
+  # Lightweight SMTP testing server with Web UI
+  # UI: http://localhost:8025  SMTP: localhost:1025
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "1025:1025"   # SMTP
+      - "8025:8025"   # Web UI
+    networks: [front, back]
+
+  # WP-CLI helper to run WordPress commands (no daemon)
+  wp-cli:
+    image: wordpress:cli
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wppass
+      WORDPRESS_DB_NAME: wp
+    user: "33:33" # www-data to avoid permission issues on mounted volume
+    volumes:
+      - ./wordpress:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["bash","-lc"]
+    command: ["wp --info && echo 'Use: docker compose run --rm wp-cli wp <command>'"]
+    networks: [back]
+
   nginx:
     image: nginx:latest
     depends_on: [wordpress]
